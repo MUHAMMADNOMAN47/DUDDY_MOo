@@ -1,5 +1,5 @@
 function copyCA(){
-  const text=document.getElementById("ca").innerText;
-  navigator.clipboard.writeText(text);
+  const ca=document.getElementById("ca").innerText.trim();
+  navigator.clipboard.writeText(ca);
   alert("Contract address copied");
 }
