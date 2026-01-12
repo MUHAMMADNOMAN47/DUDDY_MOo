@@ -1,9 +1,9 @@
 :root{
-  --green:#2cff7b;
-  --green-soft:#1edc73;
+  --green:#16e06a;
+  --green-soft:#12c85e;
   --dark:#041b0d;
   --card:#0b2f18;
-  --border:#2cff7b;
+  --border:#16e06a;
   --purple:#b58cff;
   --text:#eaffea;
 }
@@ -35,10 +35,14 @@ body{
   align-items:center;
 }
 
-.nav-logo{width:36px}
+.nav-logo{
+  width:36px;
+}
+
 .nav-title{
   margin-left:8px;
-  font-weight:700;
+  font-size:18px;
+  font-weight:900;
   color:var(--green);
 }
 
@@ -56,8 +60,8 @@ body{
   border-radius:14px;
   background:#114d2a;
   color:var(--green);
-  font-weight:700;
-  box-shadow:0 0 20px rgba(44,255,123,.25);
+  font-weight:900;
+  box-shadow:0 0 20px rgba(22,224,106,.25);
 }
 
 .icon-btn{
@@ -69,6 +73,7 @@ body{
 .buy-btn{
   background:var(--green);
   color:#000;
+  text-decoration:underline;
 }
 
 /* HERO */
@@ -80,32 +85,34 @@ body{
 }
 
 .logo-box{
-  background:linear-gradient(180deg,#134c2c,#081e12);
-  border-radius:28px;
-  padding:26px;
-  box-shadow:0 0 120px rgba(44,255,123,.35);
+  background:linear-gradient(180deg,#124a2b,#071b11);
+  border-radius:26px;
+  padding:18px;
+  box-shadow:0 0 90px rgba(22,224,106,.35);
 }
 
 .hero-logo{
-  width:260px;
+  width:220px;
 }
 
 .title{
-  margin-top:26px;
-  font-size:46px;
+  margin-top:22px;
+  font-size:48px;
+  font-weight:900;
   letter-spacing:1px;
 }
 
-.g{color:var(--green-soft)}
-.p{color:var(--purple)}
+.g{color:var(--green-soft);font-weight:900;}
+.p{color:var(--purple);font-weight:900;}
 
 .hero-text{
   margin-top:14px;
   text-align:center;
   font-size:16px;
-  line-height:1.6;
-  opacity:.95;
+  line-height:1.7;
+  opacity:.9;
   max-width:360px;
+  font-weight:500;
 }
 
 /* CA */
@@ -118,7 +125,7 @@ body{
 .ca-box{
   background:#072513;
   border:2px solid var(--border);
-  box-shadow:0 0 60px rgba(44,255,123,.3);
+  box-shadow:0 0 60px rgba(22,224,106,.3);
   border-radius:18px;
   padding:16px;
   display:flex;
@@ -129,11 +136,11 @@ body{
   max-width:420px;
 }
 
-.ca-label{color:var(--green)}
-.ca-text{word-break:break-all}
-.copy{color:var(--green)}
+.ca-label{color:var(--green);}
+.ca-text{word-break:break-all;}
+.copy{color:var(--green);}
 
-/* ACTIONS */
+/* ACTION BUTTONS */
 .actions{
   padding:10px 16px 40px;
 }
@@ -145,7 +152,7 @@ body{
   padding:18px;
   border-radius:18px;
   font-size:18px;
-  font-weight:800;
+  font-weight:900;
   margin-bottom:14px;
 }
 
@@ -156,6 +163,7 @@ body{
   padding:16px;
   border-radius:18px;
   font-size:17px;
+  font-weight:700;
 }
 
 /* SPARKLES */
@@ -177,4 +185,4 @@ body{
   0%{transform:translateY(0)}
   50%{transform:translateY(-12px)}
   100%{transform:translateY(0)}
-  }
+}
