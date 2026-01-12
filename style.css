@@ -1,1 +1,117 @@
-Final DUDDY website styles.
+:root{
+  --green:#2CCE6E;
+  --bg1:#070519;
+  --bg2:#0B1030;
+  --text:#F6F1DC;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+
+body{
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:var(--text);
+}
+
+a{text-decoration:none;color:inherit}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:24px 40px;
+}
+
+.logo{height:38px}
+
+.links a{
+  margin-left:22px;
+  opacity:.7;
+}
+
+.links a:hover{opacity:1}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:4rem;
+  color:var(--green);
+}
+
+.hero p{
+  margin:20px 0;
+  max-width:520px;
+  opacity:.85;
+}
+
+.cta{display:flex;gap:16px}
+
+.btn{
+  padding:12px 26px;
+  border-radius:30px;
+  font-weight:bold;
+}
+
+.primary{
+  background:var(--green);
+  color:#000;
+}
+
+.outline{
+  border:1px solid var(--green);
+  color:var(--green);
+}
+
+.block{
+  padding:90px 40px;
+  text-align:center;
+}
+
+.soft{
+  background:rgba(255,255,255,.03);
+}
+
+.block h2{margin-bottom:25px}
+
+.grid{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.box{
+  padding:22px 26px;
+  border-radius:14px;
+  background:rgba(255,255,255,.05);
+}
+
+ul{list-style:none}
+
+ul li{margin:14px 0}
+
+.social{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.social a{color:var(--green)}
+
+.whatsapp{font-weight:bold}
+
+footer{
+  padding:35px;
+  text-align:center;
+  opacity:.7;
+}
+
+@media(max-width:768px){
+  .grid{flex-direction:column}
+  .links{display:none}
+}
