@@ -1,117 +1,81 @@
 :root{
-  --green:#2CCE6E;
-  --bg1:#070519;
-  --bg2:#0B1030;
-  --text:#F6F1DC;
+--green:#2CCE6E;
+--bg:#06091f;
+--card:#0b1235;
+--text:#eafbea;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:radial-gradient(circle,#0a1240,#050818);color:var(--text)}
 
-body{
-  background:linear-gradient(180deg,var(--bg1),var(--bg2));
-  color:var(--text);
+a{text-decoration:none;color:var(--green)}
+
+.topbar{
+display:flex;justify-content:space-between;align-items:center;
+padding:16px 20px;background:#050818;position:sticky;top:0
 }
 
-a{text-decoration:none;color:inherit}
+.nav-logo{width:34px}
+.brand{color:var(--green);font-weight:bold;margin-left:8px}
 
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:24px 40px;
+.right a{margin-left:16px}
+.buy-btn{background:var(--green);color:#000;padding:8px 16px;border-radius:18px}
+
+.hero{display:flex;justify-content:center;padding:70px 20px}
+.hero-box{
+background:var(--card);
+padding:40px 25px;
+border-radius:30px;
+box-shadow:0 0 80px rgba(44,206,110,.4);
+text-align:center;max-width:420px
 }
+.hero-logo{width:180px;margin-bottom:20px}
+.hero h1{color:var(--green);font-size:42px}
+.hero p{font-size:14px;line-height:1.6;margin:16px 0}
 
-.logo{height:38px}
-
-.links a{
-  margin-left:22px;
-  opacity:.7;
-}
-
-.links a:hover{opacity:1}
-
-.hero{
-  min-height:90vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:4rem;
-  color:var(--green);
-}
-
-.hero p{
-  margin:20px 0;
-  max-width:520px;
-  opacity:.85;
-}
-
-.cta{display:flex;gap:16px}
+.buttons{display:flex;gap:14px;justify-content:center}
 
 .btn{
-  padding:12px 26px;
-  border-radius:30px;
-  font-weight:bold;
+padding:12px 22px;
+border-radius:28px;
+font-weight:bold
+}
+.primary{background:var(--green);color:#000}
+.outline{border:1px solid var(--green);color:var(--green)}
+
+.card{
+background:var(--card);
+margin:30px auto;
+padding:28px;
+border-radius:26px;
+max-width:420px
 }
 
-.primary{
-  background:var(--green);
-  color:#000;
+.list{list-style:none}
+.list li{padding:10px 0;font-size:16px}
+
+.phase{
+display:inline-block;
+background:#1f8f5f;
+padding:6px 14px;
+border-radius:16px;
+font-size:13px;
+margin-bottom:12px
 }
 
-.outline{
-  border:1px solid var(--green);
-  color:var(--green);
+.ca{
+display:flex;
+gap:10px;
+align-items:center;
+background:#02051a;
+padding:14px;
+border-radius:16px;
+font-size:12px;
+word-break:break-all
 }
 
-.block{
-  padding:90px 40px;
-  text-align:center;
-}
-
-.soft{
-  background:rgba(255,255,255,.03);
-}
-
-.block h2{margin-bottom:25px}
-
-.grid{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-}
-
-.box{
-  padding:22px 26px;
-  border-radius:14px;
-  background:rgba(255,255,255,.05);
-}
-
-ul{list-style:none}
-
-ul li{margin:14px 0}
-
-.social{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-}
-
-.social a{color:var(--green)}
+.full{display:block;text-align:center;margin-top:14px}
 
 .whatsapp{font-weight:bold}
 
-footer{
-  padding:35px;
-  text-align:center;
-  opacity:.7;
-}
-
-@media(max-width:768px){
-  .grid{flex-direction:column}
-  .links{display:none}
-}
+footer{text-align:center;padding:30px;opacity:.6}
